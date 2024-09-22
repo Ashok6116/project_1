@@ -17,7 +17,7 @@ def create_database():
     # Create table if not exists
     c.execute('''CREATE TABLE IF NOT EXISTS bus_data
                  (bus_route_name TEXT, bus_name TEXT, bus_type TEXT, departure_time TEXT,
-                  duration TEXT, arrival_time TEXT, rating TEXT, fare TEXT, seats_available TEXT)''')
+                  duration TEXT, arrival_time TEXT, rating TEXT, fare INT, seats_available TEXT)''')
 
     conn.commit()
     conn.close()
